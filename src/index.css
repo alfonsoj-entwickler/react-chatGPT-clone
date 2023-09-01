@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+* {
+  color: #fefefe;
+  font-family: 'Roboto', sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.app {
+  display: flex;
+  background-color: #343541;
+}
+
+.side-bar {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+  width: 244px;
+  background-color: #202123;
+}
+
+.reset {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+  margin: 10px;
+  border: 0.5px solid rgba(255,255,255,0.5);
+  background-color: transparent;
+  border-radius: 5px;
+  font-size: 1rem;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.25s ease-in-out;
+}
+
+.reset:hover {
+  border: 0.5px solid rgba(255,255,255,0.95);
+}
+
+.reset .icon {
+  width: 30px;
+  height: 30px;
+}
+
+nav {
+  padding: 10px;
+  margin: 10px;
+  border-top: 0.5px solid rgba(255,255,255,0.5);
+}
+
+.history {
+  height: 100%;
+  padding: 10px;
+  margin: 10px;
+}
+
+.history li {
+  padding: 15px 0;
+  list-style-type: none;
+  cursor: pointer;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 100vh;
+  width: calc(100% - 244px);
+  text-align: center;
+}
+
+.info {
+  padding: 10px;
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.input-container {
+  position: relative;
+  width: 100%;
+  max-width: 650px;
+}
+
+input[type="text"] {
+  padding: 12px 15px;
+  height: 60px;
+  width: 100%;
+  font-size: 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.05);
+  box-shadow: rgba(0, 0, 0, 0.5) 0 54px 55px, rgba(0, 0, 0, 0.05) 0 -12px 20px,
+    rgba(0, 0, 0, 0.05) 0 4px 6px, rgba(0, 0, 0, 0.05) 0 12px 3px,
+    rgba(0, 0, 0, 0.09) 0 -3px 5px;
+}
+
+input[type="text"]:focus {
+  outline: none;
+}
+
+.bottom-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.input-container #submit {
+  position: absolute;
+  right: 20px;
+  bottom: 8px;
+  padding: 0;
+  width: 40px;
+  height: 40px;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+
+#submit .icon {
+  width: 25px;
+  height: 25px;
+}
+
+.feed {
+  overflow: scroll;
+  width: 100%;
+  padding: 0;
+}
+
+.feed li {
+  display: flex;
+  width: 100%;
+  padding: 20px;
+  margin: 20px 0;
+  background-color: #444654;
+}
+
+.feed p {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 14px;
+  text-align: left;
+}
+
+.feed p.role {
+  min-width: 100px;
+}

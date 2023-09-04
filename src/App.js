@@ -67,10 +67,10 @@ const App = () => {
   console.log(uniqueTitles)
 
   return (
-    <div className="app">
-      <section className="side-bar">
+    <div className="app flex">
+      <section className="side-bar flex">
         <button 
-          className="reset" 
+          className="reset flex" 
           type="button"
           onClick={resetChat}
         >
@@ -87,17 +87,17 @@ const App = () => {
           <p>Made by Alfonsoj-Entwickler</p>
         </nav>
       </section>
-      <section className="main">
+      <section className="main flex">
         <h1>{currentTitle ? "" : "ReactAppChatGPT"}</h1>
         <ul className="feed">
           {currectChat?.map((chatMessage, index) => (
-            <li key={index}>
+            <li key={index} className="flex">
               <p className="role">{chatMessage.role}</p>
               <p>{chatMessage.content}</p>
             </li>
           ))}
         </ul>
-        <div className="bottom-section">
+        <div className="bottom-section flex">
           <form className="input-container">
             <input 
               type="text" 

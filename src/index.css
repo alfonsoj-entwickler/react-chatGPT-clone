@@ -12,12 +12,10 @@ body {
 }
 
 .app {
-  display: flex;
   background-color: #343541;
 }
 
 .side-bar {
-  display: flex;
   flex-direction: column;
   justify-content: space-between;
   height: 100vh;
@@ -26,7 +24,6 @@ body {
 }
 
 .reset {
-  display: flex;
   justify-content: center;
   align-items: center;
   gap: 10px;
@@ -69,7 +66,6 @@ nav {
 }
 
 .main {
-  display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
@@ -108,7 +104,6 @@ input[type="text"]:focus {
 }
 
 .bottom-section {
-  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -140,7 +135,6 @@ input[type="text"]:focus {
 }
 
 .feed li {
-  display: flex;
   width: 100%;
   padding: 20px;
   margin: 20px 0;
@@ -155,4 +149,8 @@ input[type="text"]:focus {
 
 .feed p.role {
   min-width: 100px;
+}
+
+.flex {
+  display: flex;
 }
